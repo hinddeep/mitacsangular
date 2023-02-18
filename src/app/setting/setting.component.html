@@ -1,0 +1,19 @@
+<div class="example-button-row">
+    <button *ngIf="commService.isRunning" mat-raised-button color="primary" (click)="toggleTime()">Stop</button>
+    <button *ngIf="!commService.isRunning" mat-raised-button color="primary" (click)="toggleTime()">Start</button>
+</div>
+
+<form #frm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="hour">Hour</label>
+        <input type="number" class="form-control" id="name" required [(ngModel)]="hour" name="name">
+
+        <label for="minute">minute</label>
+        <input type="number" class="form-control" id="name" required [(ngModel)]="minute" name="name">
+
+        <label for="second">second</label>
+        <input type="number" class="form-control" id="name" required [(ngModel)]="second" name="name">
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!frm.form.valid">Submit</button>
+</form>

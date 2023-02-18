@@ -1,0 +1,32 @@
+.clock-container {
+    font-size: 35px;
+    /*line-height:25px;*/
+    color: white;
+    height: 100%;
+    font-weight: 500;
+}
+.clock,
+.clock2 {
+    top: 30%;
+    background-color: #3c434c;
+    width: 50%;
+    height: 100%;
+}
+.clock div,
+.clock2 div {
+    display: inline-block;
+    background-color: #202731;
+    width: 25%;
+    text-align: center;
+}
+.clock2 {
+    background-color: white;
+}
+.time {
+    width: 100% !important;
+    color: red;
+}
+.white{
+    color: white;
+}
+
